@@ -1,3 +1,10 @@
+@import '~@squidit/css/src/scss/squid.scss';
+
 body {
   background: #fff;
+}
+
+img{
+  width: 150px ;
+  height: 150px ;
 }

@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@squidit/css": "^1.1.7"
+  },
+  "assets": [
+    {
+      "glob": "**/*",
+      "input": "./node_modules/@squidit/css/dist/fonts",
+      "output": "./assets/fonts"
+    },
+    "src/assets"
+  ],
+  "styles": [
+    "src/styles.scss"
+  ],
+  "scripts": [
+    "node_modules/@squidit/css/dist/js/squid.min.js"
+  ]
+}
