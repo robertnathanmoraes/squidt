@@ -10,7 +10,19 @@ img{
   margin-right: 15px;
 }
 
-.margin-right{
+.display-contents{
   display: contents;
+}
+
+.margin-image{
   margin-bottom: 15px;
+}
+
+.hover:hover{
+  display: block;
+}
+
+.text{
+  font-weight: 100;
+  color: white;
 }

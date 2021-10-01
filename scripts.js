@@ -12,20 +12,28 @@ document.addEventListener("DOMContentLoaded", function () {
             })
 });
 
-function crialinha(usuario){
-    console.log(usuario)
+function crialinha(item){
+    console.log(item)
     linha = document.createElement("div")
 
     linha.classList.add('col-1')
-    linha.classList.add('margin-right')
+    linha.classList.add('display-contents')
 
     tdimage = document.createElement("img")
-    tdimage.src = usuario.imagens['resolucaoPadrao'].url
+    tdimage.src = item.imagens['resolucaoPadrao'].url
 
-    tdimage.innerHTML = tdimage.src
+    tdimage.classList.add('margin-image')
+    tdimage.classList.add('hover')
+
+    like = document.createElement('p')
+    like.textContent = item.upvotes
+
+    like.classList.add('hover')
+    like.classList.add('text')
 
 
     linha.appendChild(tdimage)
+    linha.appendChild(like)
 
     return linha
 }
