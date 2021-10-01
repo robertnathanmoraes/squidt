@@ -15,9 +15,15 @@ document.addEventListener("DOMContentLoaded", function () {
 function crialinha(usuario){
     console.log(usuario)
     linha = document.createElement("div")
+
+    linha.classList.add('col-1')
+    linha.classList.add('margin-right')
+
     tdimage = document.createElement("img")
     tdimage.src = usuario.imagens['resolucaoPadrao'].url
+
     tdimage.innerHTML = tdimage.src
+
 
     linha.appendChild(tdimage)
 
