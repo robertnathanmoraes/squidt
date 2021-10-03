@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
 
-            let usuario = data;
             let tabela = document.getElementById("tabela")
 
             data.forEach(element => {
