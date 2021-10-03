@@ -4,25 +4,43 @@ body {
   background: #fff;
 }
 
-img{
-  width: 120px;
+.img-post{
+  width: 120px !important;
   height: 120px;
   margin-right: 15px;
-}
-
-.display-contents{
-  display: contents;
-}
-
-.margin-image{
   margin-bottom: 15px;
+  z-index: 1;
 }
 
-.hover:hover{
-  display: block;
+.margin-right{
+  display: inline-grid;
 }
 
-.text{
-  font-weight: 100;
+.text-style{
+  font-size: x-small;
   color: white;
+  font-family: Calibri;
+  position: absolute;
+  z-index: 2;
+  width: 120px;
+  display: grid;
+  place-items: center;
+  margin-top: 30px;
+  opacity: 0;
 }
+
+
+
+div:hover > .img-post{
+  filter: brightness(.4);
+}
+
+div:hover > tbody{
+  opacity: 1;
+}
+
+.icon{
+  float: left;
+  padding: 4px;
+}
+
