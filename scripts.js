@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 let item = create(element);
                 tabela.appendChild(item)
             })
-
+                .catch(e => console.log('error', e))
         })
 });
 
